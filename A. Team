@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int test,cnt=0;
+    scanf("%d",&test);
+    
+    while(test--){
+        int ara[3],sum=0;
+        for(int i=0;i<3;i++){
+            scanf("%d",&ara[i]);
+            sum+=ara[i];
+        }
+        if(sum>=2)
+        cnt++;
+        else
+        continue;
+    }
+    printf("%d\n",cnt);
+    cnt=0;
+    return 0;
+}
